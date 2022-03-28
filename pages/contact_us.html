@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="description" content="Umbrella produce Bio Organic Weapons accros the world" > 
+    <meta name="keywords" content="B.O.W.S, Company, Black Market, Virus, pharmaceutical" >
+
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/1f4103ef35.js" crossorigin="anonymous"></script>
+    <header>
+        <div class="header__navigation">
+            <input type="checkbox" name="radio" id="radio" class="header__input" >
+            <!----Logo------------->
+            <div class="header__responsive">
+                <a href="https://game.capcom.com/residentevil/en/"><img src="../img/logo-min.png" class="header__logo" alt="logo_umbrella"></a>
+
+                <div class="header__menuBurger">
+
+                    <label for="radio"  class="header__label" >
+                        <i id="derecha" class="fa fa-bars"></i>
+                    </label>
+                </div>
+            </div>
+
+            <!----Navigation Menu----->
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item"><a href="../index.html">Inicio</a></li>
+                    <li class="header-nav__item" ><a href="../pages/About_us.html">About us</a></li>
+                    <li class="header-nav__item" ><a href="../pages/virals.html">Virals</a></li>
+                    <li class="header-nav__item" ><a href="../pages/bows.html">B.O.W.S</a></li>
+                    <li class="header-nav__item" ><a href="../pages/contact_us.html">Contact</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!------Main------title-->
+        <h1 class="title_contact">Contact</h1>
+        <!-------Main--Formulario-->
+        <section class="container1">
+            <form class="form_container1" action="./contacto.html">
+
+                <div class="input-gender">
+                    <label for="genero" class="input-gender__label" >Gender: </label><br>
+                    <label for="masculino" class="input-gender__label" >Male</label>
+                    <input type="radio" name="genero" value="ml" class="input-gender__input" >
+                    <label for="genero" class="input-gender__label" >Female</label>
+                    <input type="radio" name="genero" value="fm" class="input-gender__input" >
+                </div>
+
+                
+                    <label for="nombre">Name</label>
+                    <input type="text" name="nombre" >
+                    <label for="apellido">Last name</label>
+                    <input type="text" name="apellido">
+                    <label for="correo">E-mail</label>
+                    <input type="email" name="correo">
+                
+                <br>
+
+                <br>
+                <label for="comentarios">Are you interested in something?</label>
+                <textarea name="comentarios" id="" cols="30" rows="10" placeholder="We contact you"></textarea>
+
+                <div class="buttons-contact">
+                    <input class="buttons-contact__input" type="submit" name="Enviar" value="SEND">
+                    <input class="buttons-contact__input" type="reset" value="RESET" name="Resetear">
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+
+    <footer class="footerElse">
+<!------------------------Redes---------------------->
+<nav class="redes">
+    <div class="redes__spotify"><a href="https://www.spotify.com/" target="_blank"><i class="fab fa-spotify"></i></a></div>
+    <div class="redes__instagram"><a href="https://www.instagram.com/residentevil/" target="_blank"><i class="fab fa-instagram"></i></i></a></div>
+    <div class="redes__twitter"><a href="https://www.twitt 0er.com/" target="_blank"><i class="fab fa-twitter"></i></a></div>
+    <div class="redes__facebook"><a href="https://www.facebook.com/residentevil/" target="_blank"><i class="fab fa-facebook"></i></a></div>
+    <div class="redes__telegram"><a href="https://web.telegram.org/" target="_blank"><i class="fab fa-telegram"></i></a></div>
+</nav>
+<!--------------------------CopyRight-->
+<section class="copyright">
+    <p class="copyright__text">2021 Copyright Umbrella Corporation All rights reserved </p>
+</section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+</body>
+</html>

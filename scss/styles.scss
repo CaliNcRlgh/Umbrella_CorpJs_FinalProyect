@@ -1,0 +1,48 @@
+@import './variables';
+@import './header';
+@import './inicio';
+@import './aboutUs';
+@import './virals-bows';
+@import './contact';
+@import './footer';
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62,5%;
+}
+body {
+	background-image: url(../css/fondo2.jpg);
+}
+
+/* PAGE 404 */
+
+.error {
+	color: #880f0f;
+	text-decoration: line-through;
+}
+
+.image404 {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	padding-top: 70px;
+	opacity: 0.6;
+}
+
+$redes-colors: (
+	spotify: #880f0f,
+	instagram: #ffffff,
+	twitter: #880f0f,
+	facebook: #ffffff,
+	telegram: #880f0f
+);
+
+@each $red, $color in $redes_colors {
+	.redes__#{$red} i {
+		color: $color ;
+		
+	}
+}

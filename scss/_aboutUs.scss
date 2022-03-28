@@ -1,0 +1,93 @@
+.titleAbout {
+	margin-top: 0.5rem;
+	padding-left: 3rem;
+}
+.titleAbout2 {
+	padding-left: 3rem;
+}
+
+h3 {
+	color: $font-color-h;
+	text-align: center;
+	font-family: $font-family-h;
+}
+
+.carousel-item {
+	width: 85%;
+	height: 450px;
+	margin-top: 1rem;
+}
+.d-block {
+	width: 100%;
+	height: 100%;
+	margin-left: 6.4rem;
+}
+.move {
+	text-align: left;
+}
+.text_aboutus {
+	padding-top: 2rem;
+	padding-left: 6rem;
+}
+.spencer1 {
+	display: flex;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 760px) {
+    .spencer {
+        width: 15rem;
+        padding-top: 2rem;
+    }
+
+    .titleAbout {
+        padding-left: 0;
+    }
+    
+    .titleAbout2 {
+        padding-left: 0;
+    }
+
+    .text_aboutus {
+        padding-left: 1rem;
+        font-size: $font-size-p-m;
+    }
+
+    .d-block {
+        margin-left: 0;
+    }
+
+    .carousel-item {
+        height: 300px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    
+    .titleAbout {
+        padding-left: 0;
+        padding-top: 0;
+        font-size: $font-size-h2-xs;
+        padding-top: 2rem;
+    }
+
+    .titleAbout2 {
+        font-size: $font-size-h3-xs;
+    }
+
+    .text_aboutus {
+        font-size:$font-size-p-xs;
+
+    }
+
+    .d-block {
+        margin-top: 1rem;
+    }
+
+    .carousel-item {
+        height: 200px;
+        margin-left: 0;
+    }
+}
+

@@ -1,0 +1,139 @@
+.header__logo {
+	height: 3rem;
+	width: 3rem;
+	transition: 15s;
+	margin-top: 0.5rem;
+	margin-left: 0.5rem;
+	&:hover {
+		transform: rotate(360deg);
+		cursor: pointer;
+	}
+}
+
+li {
+	a {
+		list-style: none;
+		text-decoration: none;
+		list-style-type: none;
+		font-family: 'Poppins';
+		color: #880f0f;
+		font-weight: bold;
+		margin-right: 2rem;
+		line-height: 2rem;
+		&:hover {
+			text-decoration: line-through;
+			color: #880f0f;
+		}
+	}
+}
+
+ul {
+    list-style: none;
+    
+}
+
+.header__navigation {
+    input {
+        display: none;
+    }
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menuBurger {
+    display: none;
+}
+
+.header-nav {
+	ul {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 2rem;
+		padding-top: 1.5rem;
+		padding-bottom: 2rem;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+    .header-nav ul {
+        margin-right: 7.5rem;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    li {
+		a {
+			font-size: 14px;
+			margin-right: 0;
+			line-height: 2rem;
+			color: #ffffff;
+			font-weight: bold;
+		}
+	}
+
+    .header-nav {
+		width: 100%;
+		visibility: hidden;
+		position: sticky;
+		z-index: 3;
+		display: flex;
+		justify-content: center;
+		padding-top: 0;
+		margin-right: 0;
+		padding-bottom: 0;
+		ul {
+			display: block;
+			position: absolute;
+			z-index: 1;
+			width: 100%;
+			text-align: center;
+			background-image: url(./fondo2.jpg);
+			margin-right: 0;
+		}
+	}
+
+    .header__navigation {
+		display: block;
+		input {
+			display: none;
+		}
+	}
+
+    .header__responsive {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__menuBurger {
+		color: #880f0f;
+		padding-right: 1rem;
+		padding-top: 0.4rem;
+		display: flex;
+		&:hover {
+			cursor: pointer;
+			transform: translateY(2px);
+		}
+		&:checked {
+			>.header-nav {
+				visibility: visible;
+			}
+		}
+	}
+
+    #radio {
+		&:checked {
+			~ {
+				.header-nav {
+					visibility: visible;
+				}
+			}
+		}
+	}
+
+    .header__logo {
+		height: 1.5rem;
+		width: 2rem;
+	}
+
+}

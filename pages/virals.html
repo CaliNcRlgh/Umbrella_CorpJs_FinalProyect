@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Types of Virus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300;400&display=swap" rel="stylesheet">
+    <!------Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <meta name="description" content="Umbrella produce Bio Organic Weapons accros the world">
+    <meta name="keywords" content="B.O.W.S, Company, Black Market, Virus, pharmaceutical">
+    <!--------Styles-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-----------JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-------Moments JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-us.min.js"></script>
+    <!-------SweetAlert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/1f4103ef35.js" crossorigin="anonymous"></script>
+    <header>
+        <div class="header__navigation">
+            <input type="checkbox" name="radio" id="radio" class="header__input">
+            <!----Logo------------->
+            <div class="header__responsive">
+                <a href="https://game.capcom.com/residentevil/en/"><img src="../img/logo-min.png" class="header__logo"
+                        alt="logo_umbrella"></a>
+
+                <div class="header__menuBurger">
+
+                    <label for="radio" class="header__label">
+                        <i id="derecha" class="fa fa-bars"></i>
+                    </label>
+                </div>
+            </div>
+
+            <!----Navigation Menu----->
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item"><a href="../index.html">Inicio</a></li>
+                    <li class="header-nav__item"><a href="../pages/About_us.html">About us</a></li>
+                    <li class="header-nav__item"><a href="../pages/virals.html">Virals</a></li>
+                    <li class="header-nav__item"><a href="../pages/bows.html">B.O.W.S</a></li>
+                    <li class="header-nav__item"><a href="../pages/contact_us.html">Contact</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+
+        <section class="virals">
+            <div class="virals__bannerVirals">
+                <h1 class="virals__title"> Virals</h1>
+            </div>
+            <div id="box">
+                <!-------Reloj-->
+                <div class="reloj"></div>
+
+            </div>
+            <!-- START STORE -->
+            <section class="store">
+                <div class="container storeGeneral">
+                    
+                    <div class="items">
+                    
+                    </div>
+                </div>
+            </section>
+
+            <!-- START SHOPPING CART -->
+            <section class="shopping-cart">
+                <div class="container">
+                    <h1 class="text-center">SHOPPING CART</h1>
+                    <hr>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="shopping-cart-header">
+                                <h6>Product</h6>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="shopping-cart-header">
+                                <h6 class="text-truncate">Price</h6>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="shopping-cart-header">
+                                <h6>Amount</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  START SHOPPING CART ITEMS -->
+                    <div class=" generalCart">
+
+
+
+                    </div>
+
+
+                    <!-- START TOTAL AMOUNT -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="shopping-cart-total d-flex align-items-center">
+                                <p class="mb-0">Total</p>
+                                <p class="ml-4 mb-0 finalPrice">0$</p>
+                                <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                                    data-delay="2000">
+                                    <div class="toast-header">
+                                        <span>✅</span>
+                                        <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="toast-body text-white">
+                                        Se aumentó correctamente la cantidad
+                                    </div>
+                                </div>
+                                <button class="btn btn-success ml-auto buyButton" type="button" data-toggle="modal"
+                                    data-target="#comprarModal">BUY</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- START COMPRA -->
+                    <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="comprarModalLabel">Thanks for your purchase</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Soon you will receive your order</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </section>
+
+
+
+    </main>
+
+    <footer class="footerElse">
+        <!------------------------Redes---------------------->
+        <nav class="redes">
+            <div class="redes__spotify"><a href="https://www.spotify.com/" target="_blank"><i
+                        class="fab fa-spotify"></i></a></div>
+            <div class="redes__instagram"><a href="https://www.instagram.com/residentevil/" target="_blank"><i
+                        class="fab fa-instagram"></i></i></a></div>
+            <div class="redes__twitter"><a href="https://www.twitt 0er.com/" target="_blank"><i
+                        class="fab fa-twitter"></i></a></div>
+            <div class="redes__facebook"><a href="https://www.facebook.com/residentevil/" target="_blank"><i
+                        class="fab fa-facebook"></i></a></div>
+            <div class="redes__telegram"><a href="https://web.telegram.org/" target="_blank"><i
+                        class="fab fa-telegram"></i></a></div>
+        </nav>
+        <!--------------------------CopyRight-->
+        <section class="copyright">
+            <p class="copyright__text">2021 Copyright Umbrella Corporation All rights reserved </p>
+        </section>
+    </footer>
+    <!-----Font awesome-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"
+        integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u"
+        crossorigin="anonymous"></script>
+    <!------JS-->
+    <script src="../js/main.js"></script>
+    <script src="../js/mainjquery.js"></script>
+</body>
+
+</html>
+

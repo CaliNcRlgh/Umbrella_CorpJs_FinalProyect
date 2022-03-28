@@ -1,0 +1,9 @@
+[
+    {"article": "Tyrant", "price": "8000000(US)$", "img":"../img/nemesisnew.jpg" },
+    {"article": "Hunters", "price": "6000000(US)$", "img":"../img/hunternew.jpg"},
+    {"article": "Lickers", "price": "4500000(US)$", "img":"../img/lickernew.png"},
+    {"article": "Cerberus", "price": "1500000(US)$", "img":"../img/cerberusnew.jpg"},
+    {"article": "Plant 42", "price": "2200000(US)$", "img":"../img/plant42.png"},
+    {"article": "Regenerator", "price": "5500000(US)$", "img":"../img/regenerator.jpg"}
+]
+

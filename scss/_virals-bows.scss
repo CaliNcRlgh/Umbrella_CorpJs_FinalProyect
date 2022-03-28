@@ -1,0 +1,162 @@
+.virals__title {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.virals__bannerVirals {
+    padding-top: 0%;
+}
+
+.virals__container {
+	padding: 1rem;
+	border: 2px solid rgb(114, 7, 7);
+	border-radius: 5px;
+	width: 60%;
+	margin: auto;
+	margin-bottom: 10px;
+	&:hover {
+		background: linear-gradient(225deg, #580505 0%, #460d03 100%);
+		cursor: pointer;
+	}
+}
+
+.virals__content {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	p {
+		text-align: left;
+		&:hover {
+			color: rgb(0, 0, 0);
+			font-weight: bold;
+		}
+	}
+}
+
+.item {
+	border: 2px solid #000;
+	padding: 10px;
+	border-radius: 20px;
+}
+  
+  .item-title {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+}
+  
+  .item-image {
+	height: 300px;
+	width: 100%;
+}
+  
+  .item-details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0px 15px;
+}
+  
+  .item-details > .item-price {
+	margin: 0;
+}
+  
+ 
+  .shopping-cart-items {
+	padding: 20px 0px;
+}
+  
+  .shopping-cart-header {
+	border-bottom: 1px solid #ccc;
+}
+  
+  .shopping-cart-image {
+	max-width: 80px;
+	border-radius: 20px;
+}
+  
+  .shopping-cart-quantity-input {
+	max-width: 45px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: #eee;
+	padding: 5px;
+}
+  
+  .shopping-cart-total {
+	min-height: 96px;
+	justify-content: space-between;
+}
+
+  h4{
+	color: $font-color-h;
+}
+
+h6{
+	color: $font-color-h;
+}
+
+.item-button{
+	width: 250px;
+	border: 2px solid rgb(114, 7, 7);
+}
+
+.reloj{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Helvetica, Arial;
+    color: $font-color-h;
+    border: 1px dashed rgb(114, 7, 7);
+    width: 20%;
+    padding: 10px;
+    margin: 0px auto;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 760px) {
+    .virals__content {
+		flex-direction: column;
+		align-items: center;
+		p {
+			margin-bottom: 2rem;
+			font-size: $font-size-p-m;
+		}
+	}
+	.virals__container {
+		width: 80%;
+	}
+
+	.reloj{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 340px) {
+    .virals__title {
+		font-size: $font-size-h2-xs;
+	}
+
+    .virals__content {
+		p {
+			font-size: $font-size-p-xs;
+		}
+		img {
+			padding-top: 1.5rem;
+		}
+		flex-direction: column;
+		align-items: center;
+	}
+
+    .virals__container {
+		width: 90%;
+		.virals__title--secondary {
+			font-size: $font-size-h3-xs;
+		}
+	}
+
+	.reloj{
+		font-size: 10px;
+	}
+}
+
