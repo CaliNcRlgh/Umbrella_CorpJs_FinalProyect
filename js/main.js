@@ -29,7 +29,7 @@ Productos.forEach((producto) => {
     let rowContent = `
         <div class="item shadow mb-4 chancuco">
             <h3 class="item-title">${producto.article}</h3>
-            <img class="item-image chancuco" src="${producto.img}">
+            <img class="item-image" src="${producto.img}">
 
             <div class="item-details">
                 <h4 class="item-price">${producto.price}</h4>
