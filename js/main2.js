@@ -1,7 +1,7 @@
 //Productos
 
 let generalRow = document.querySelector('.items')
-fetch('/js/data.json')
+fetch('../js/data.json')
     .then((res) => res.json())
     .then((data) => {
         data.forEach((producto) => {
