@@ -50,11 +50,15 @@ p {
 	.loginFake input[type="password"],
 	.loginFake input[type="email"]{
     
-    width: 90%;
+    width: 70% !important;
+	}
+
+	.button_form{
+		width: 40% !important;
 	}
 
 }
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 370px) {
     .mainTitles {
         h2 {
             font-size: 18px;
@@ -78,7 +82,17 @@ p {
 	.loginFake input[type="password"],
 	.loginFake input[type="email"]{
     
-    width: 90%;
+    width: 70% !important;
+	}
+
+	.button_form{
+		width: 40% !important;
+	}
+
+	.btn-primary{
+		width: 40% !important;
+		font-size: 10px;
+		margin-bottom: 20px;
 	}
 
 }

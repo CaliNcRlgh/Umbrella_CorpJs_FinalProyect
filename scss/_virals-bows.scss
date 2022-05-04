@@ -113,6 +113,14 @@ h6{
 	text-align: center;
 	margin-bottom: 40px;
 }
+.items{
+	display: grid;
+	grid-template-columns: 50% 50%;
+  }
+  
+  .chancuco{
+	margin: 20px;
+  }
 
 @media only screen and (max-width: 760px) {
     .virals__content {
@@ -130,9 +138,13 @@ h6{
 	.reloj{
 		font-size: 20px;
 	}
+	.items{
+		grid-template-columns: 100%;
+		
+	  }
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 370px) {
     .virals__title {
 		font-size: $font-size-h2-xs;
 	}
@@ -158,5 +170,21 @@ h6{
 	.reloj{
 		font-size: 10px;
 	}
-}
+	.items{
+    	grid-template-columns: 100%;
+    
+  	}
 
+	h3 {
+		font-size: 16px;
+	}
+
+	h4 {
+		font-size: 14px;
+	}
+	
+	.sizeButton{
+		font-size: 10px !important;
+		width: 120px;
+	}
+}
